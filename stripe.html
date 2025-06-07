@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complete Your Donation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 440px;
+      margin: 0 auto;
+      padding: 10px;
+      background: #ffffff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+    }
+    .banner-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px 10px 0 0;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px 15px 5px;
+    }
+    p.subtitle {
+      font-size: 14px;
+      margin: 0 15px 20px;
+    }
+    form {
+      padding: 0 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    .submit-btn {
+      background: linear-gradient(to bottom, #ff6600, #cc3300);
+      color: #fff;
+      border: none;
+      padding: 14px;
+      margin: 20px auto;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 80%;
+      box-shadow: 0 3px #992200;
+      transition: transform 0.1s;
+      display: block;
+    }
+    .submit-btn:hover {
+      background: linear-gradient(to bottom, #ffaa33, #cc3300);
+    }
+    .footer-image {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 0 0 10px 10px;
+    }
+    .footer-link {
+      margin-top: 10px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="top-phone.jpg" alt="Kidney Aid Top Banner" class="banner-image" />
+    <h1>COMPLETE YOUR DONATION</h1>
+    <p class="subtitle">Please enter your details and confirm your payment.</p>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="number" name="amount" placeholder="Donation Amount (GBP)" required />
+      <button type="submit" class="submit-btn">Pay with Stripe</button>
+    </form>
+    <img src="bottom-phone.jpg" alt="Kidney Aid Bottom Banner" class="footer-image" />
+    <p class="footer-link">www.kidney.fit</p>
+  </div>
+</body>
+</html>
